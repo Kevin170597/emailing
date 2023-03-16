@@ -1,20 +1,21 @@
+const API = 'https://emailing-a35v783m9-kevin170597.vercel.app'
 
 export const getEmails = async () => {
-    const req = await fetch('http://localhost:3001/emails');
+    const req = await fetch(`${API}/emails`);
     const res = await req.json();
     //console.log(res);
     return res;
 };
 
 export const getSentEmails = async () => {
-    const req = await fetch('http://localhost:3001/emails/sent');
+    const req = await fetch(`${API}/emails/sent`);
     const res = await req.json();
     //console.log(res);
     return res;
 };
 
 export const postEmail = async (data: any) => {
-    const req = await fetch('http://localhost:3001/emails', {
+    const req = await fetch(`${API}/emails`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -27,7 +28,7 @@ export const postEmail = async (data: any) => {
 };
 
 export const deleteEmail = async (_id: string) => {
-    const req = await fetch(`http://localhost:3001/emails/${_id}`, {
+    const req = await fetch(`${API}/emails/${_id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
@@ -39,7 +40,7 @@ export const deleteEmail = async (_id: string) => {
 };
 
 export const softDeleteEmail = async (_id: string) => {
-    const req = await fetch(`http://localhost:3001/emails/${_id}`, {
+    const req = await fetch(`${API}/emails/emails/${_id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
