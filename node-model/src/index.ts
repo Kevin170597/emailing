@@ -2,8 +2,8 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import { router } from './src/routes';
-import { dbConnect } from './src/config/mongo';
+import { router } from './routes';
+import { dbConnect } from './config/mongo';
 import path from 'path';
 
 const PORT = process.env.PORT || 3001;
