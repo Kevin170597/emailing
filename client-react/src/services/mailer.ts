@@ -4,7 +4,7 @@ import { templates } from "../utils/templates";
 const API = 'https://emailing-a35v783m9-kevin170597.vercel.app'
 
 export const mailerSend = async (subject: string, filename: string, path: string, template: 'Front' | 'Fullstack') => {
-    const req = await fetch(`${API}/emails/mailer/send`, {
+    const req = await fetch(`${API}/mailer/send`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
