@@ -38,7 +38,7 @@ export const SavedEmails = ({ emails, setEmails, loadingEmails, error }: any) =>
     const handleSendEmails = () => {
         try {
             emails.map(async (email: any) => {
-                await mailerSend(email.subject, email.filename, email.fileurl, email.template);
+                await mailerSend(email.name, email.subject, email.filename, email.fileurl, email.template);
                 await handleSoftDeleteEmail(email._id);
             });
         } catch (error) {
