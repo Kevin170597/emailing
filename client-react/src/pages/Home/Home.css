@@ -1,0 +1,14 @@
+.Home {
+    background-color: #030303;
+    width: calc(100% - 250px);
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.Home .emails {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+}

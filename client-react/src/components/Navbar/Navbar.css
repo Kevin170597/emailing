@@ -1,0 +1,34 @@
+.Navbar {
+    background-color: #1a1a1b;
+    height: 100vh;
+    width: 250px;
+    border-right: solid 1px #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+
+.Navbar h2 {
+    color: #b8b8b8;
+    margin: 0 0 16px;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.Navbar a {
+    margin-bottom: 10px;
+    color: #999999;
+    text-decoration: none;
+    height: 35px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.Navbar a.active {
+    background-color: #252525;
+}

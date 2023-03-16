@@ -1,0 +1,113 @@
+.SavedEmails {
+    background-color: #1a1a1b;
+    box-sizing: border-box;
+    padding: 16px 16px 8px;
+    border: solid 1px #414142;
+    border-radius: 6px;
+    width: 60%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.SavedEmails .sendButton {
+    background-color: #d7dadc;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 0 10px 0 5px;
+    font-weight: bold;
+}
+
+.SavedEmails .empty {
+    color: #999999;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.SavedEmails .error {
+    color: #999999;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.SavedEmails .sendButton:hover {
+    background-color: #babfc2;
+}
+
+.SavedEmails .emailCard {
+    width: 100%;
+    border: solid 1px #414142;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.SavedEmails .emailCard .emailData {
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+    border-bottom: solid 1px #414142;
+    align-items: center;
+}
+
+.SavedEmails .emailCard .emailData b {
+    color: #afafaf;
+    margin-right: 10px;
+}
+
+.SavedEmails .emailCard .emailData p {
+    color: #999999;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.SavedEmails .emailCard .emailData .subject {
+    background-color: #414142;
+    padding: 0 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+.SavedEmails .emailCard .emailData button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SavedEmails .emailCard .emailData button:hover {
+    background-color: #414142;
+}
+
+.SavedEmails .emailCard .file {
+    display: flex;
+}
+
+.SavedEmails .emailCard .file p {
+    color: #999999;
+    margin: 0;
+}
+
+.SavedEmails .emailCard .file a {
+    margin-left: 10px;
+    color: rgb(90, 126, 173);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
