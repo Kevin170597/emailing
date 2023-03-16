@@ -40,7 +40,7 @@ export const deleteEmail = async (_id: string) => {
 };
 
 export const softDeleteEmail = async (_id: string) => {
-    const req = await fetch(`${API}/emails/emails/${_id}`, {
+    const req = await fetch(`${API}/emails/${_id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
